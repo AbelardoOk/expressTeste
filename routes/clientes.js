@@ -1,6 +1,8 @@
+// Importação das bibliotecas necessárias
 const express = require('express')
 const route = express.Router()
 
+// Configuração de rotas
 route.get('/parcelas', (req,res) => {
     x = 16
     res.send(`Você ainda possuí ${x} parcelas restantes!`)
@@ -22,4 +24,5 @@ route.delete('/deletar', (req, res) => {
     }
 })
 
+// Exportação das rotas
 module.exports = route

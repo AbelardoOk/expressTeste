@@ -1,6 +1,8 @@
+// Importação das bibliotecas necessárias
 const express = require('express')
 const route = express.Router()
 
+// Configuração de rotas
 route.get('/disponiveis', (req,res) => {
     res.send("Sedans: Onix Plus, Prisma, Siena \nOHatch: Onix, Mobi, HB20")
 })
@@ -17,4 +19,5 @@ route.delete('/cancelar', (res, req) => {
     res.send("Seu pedido de cancelamento foi enviado para a analise...")
 })
 
+// Exportação das rotas
 module.exports = route
